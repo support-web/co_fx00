@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FX運用実績ポートフォリオ | A/Bテスト用4パターン</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">FXポートフォリオダッシュボード</p>
+      <h1>4つのデザインで資産成長を直感的に伝える</h1>
+      <p class="lead">視覚的に資産の増加が一目で伝わるグラフと共に、ABテストで最適なUXを見つけるための4パターンを用意しました。</p>
+      <div class="hero__cta">
+        <button class="primary">デモデータを閲覧</button>
+        <button class="ghost">ABテストの計画を共有</button>
+      </div>
+    </div>
+    <div class="hero__figure">
+      <div class="figure-card">
+        <p class="figure-card__label">累計リターン</p>
+        <p class="figure-card__value">+38.2%</p>
+        <div class="spark">
+          <canvas id="heroSpark" width="260" height="120"></canvas>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section>
+      <div class="section__head">
+        <div>
+          <p class="eyebrow">ABテスト用デザイン</p>
+          <h2>4パターンのポートフォリオ画面</h2>
+          <p class="muted">上昇トレンドを強調する色彩と構成を変えた4つのバリエーション。短期間で最適なコンバージョンのデザインを比較できます。</p>
+        </div>
+        <div class="legend">
+          <span class="dot dot--stable"></span><span>安定運用</span>
+          <span class="dot dot--agile"></span><span>高リスク</span>
+        </div>
+      </div>
+
+      <div class="grid">
+        <article class="card card--aurora">
+          <div class="card__head">
+            <p class="eyebrow">Variant A</p>
+            <h3>Aurora Glow</h3>
+            <p class="muted">淡いグラデーションで滑らかな成長を演出。安心感を与えつつ上昇トレンドを強調。</p>
+          </div>
+          <div class="card__body">
+            <div class="metrics">
+              <div>
+                <p class="label">月次リターン</p>
+                <p class="value">+3.8%</p>
+              </div>
+              <div>
+                <p class="label">最大ドローダウン</p>
+                <p class="value">-4.1%</p>
+              </div>
+              <div>
+                <p class="label">勝率</p>
+                <p class="value">62%</p>
+              </div>
+            </div>
+            <canvas id="chartA" width="520" height="260"></canvas>
+          </div>
+        </article>
+
+        <article class="card card--nocturne">
+          <div class="card__head">
+            <p class="eyebrow">Variant B</p>
+            <h3>Nocturne Rise</h3>
+            <p class="muted">ダークモードにネオンラインを重ね、力強い上昇を印象付けるビジュアル。</p>
+          </div>
+          <div class="card__body">
+            <div class="metrics">
+              <div>
+                <p class="label">月次リターン</p>
+                <p class="value">+4.5%</p>
+              </div>
+              <div>
+                <p class="label">最大ドローダウン</p>
+                <p class="value">-5.6%</p>
+              </div>
+              <div>
+                <p class="label">勝率</p>
+                <p class="value">65%</p>
+              </div>
+            </div>
+            <canvas id="chartB" width="520" height="260"></canvas>
+          </div>
+        </article>
+
+        <article class="card card--serenity">
+          <div class="card__head">
+            <p class="eyebrow">Variant C</p>
+            <h3>Serenity Curve</h3>
+            <p class="muted">柔らかなトーンで持続的成長を想起させる落ち着いたUI。長期保有ユーザー向け。</p>
+          </div>
+          <div class="card__body">
+            <div class="metrics">
+              <div>
+                <p class="label">月次リターン</p>
+                <p class="value">+3.2%</p>
+              </div>
+              <div>
+                <p class="label">最大ドローダウン</p>
+                <p class="value">-3.3%</p>
+              </div>
+              <div>
+                <p class="label">勝率</p>
+                <p class="value">59%</p>
+              </div>
+            </div>
+            <canvas id="chartC" width="520" height="260"></canvas>
+          </div>
+        </article>
+
+        <article class="card card--pulse">
+          <div class="card__head">
+            <p class="eyebrow">Variant D</p>
+            <h3>Pulse Momentum</h3>
+            <p class="muted">ビビッドなラインで勢いを表現。短期の成長を重視したインパクト重視デザイン。</p>
+          </div>
+          <div class="card__body">
+            <div class="metrics">
+              <div>
+                <p class="label">月次リターン</p>
+                <p class="value">+5.1%</p>
+              </div>
+              <div>
+                <p class="label">最大ドローダウン</p>
+                <p class="value">-6.0%</p>
+              </div>
+              <div>
+                <p class="label">勝率</p>
+                <p class="value">68%</p>
+              </div>
+            </div>
+            <canvas id="chartD" width="520" height="260"></canvas>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>次のスプリントでは、CTA配置やコピーを微調整し、A/Bテストを高速化します。</p>
+    <div class="footer__actions">
+      <button class="secondary">テスト計画をダウンロード</button>
+      <button class="primary">運用レポートを共有</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
